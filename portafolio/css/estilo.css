@@ -1,0 +1,111 @@
+body{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    margin:0;
+    padding: 0;
+}
+p{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2{
+color: #9a53f7;
+text-align: center;
+}
+
+header{
+    background: #9a53f7;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+nav ul li{
+    display:inline;
+    margin: 0;
+}
+
+nav ul li a{
+    display: inline;
+    margin: 0 10px;
+    color: #253057;
+}
+#about{
+    padding: 20px;
+    background: white;
+    
+    
+}
+#about h2{
+    margin-top: 0;
+}
+.perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.perfil img{
+    width: 200px;
+    border-radius: 100px; 
+
+    
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.project{
+    width: 300px;
+    padding: 10px;
+    background: #9a53f7;
+    border: solid #253057;
+    ;
+    border-radius: 5%;
+    text-align: center;
+}
+.project img{
+    max-width: 100%;
+    height: auto;
+}
+#contact{
+    padding: 10px;
+    background:#9a53f7;
+    margin: 30px;
+    border-radius: 2%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    margin-bottom: 5px;
+}
+form input, form textarea{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+form input[type="submit"]{
+    background: #253057;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 600px){
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+}

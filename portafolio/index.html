@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portafolio</title>
+    <link href="css/estilo.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+<header>
+<h1>Ingeniera electrónica </h1>
+<nav>
+    <ul>
+        <li>
+            <a href="#about"> <strong>Sobre mi</strong></a>
+        </li>
+        <li>
+            <a href="#portfolio"> <strong>Portafolio</strong></a>
+        </li>
+        <li>
+            <a href="#contact"><strong>Contacto</strong></a>
+        </li>
+    </ul>
+</nav>
+</header>
+<section id="about">
+    <div class="perfil">
+        <img src="../portafolio/foto1.jpg" alt="proyecto 2">
+    </div>
+    <h2>Hola, soy Nathally. Encantada de conocerte.</h2>
+    <p >Soy ingeniera Electrónica con 2 años de experiencia en el diseño, desarrollo e implementación de soluciones electrónicas innovadoras.</p>
+    <p>Sólidos conocimientos en microcontroladores, diseño de circuitos, soporte tecnico en plataformas entre otros.</p>
+    <p>Pasión por la tecnología y la resolución de problemas complejos.</p>
+    <p> Busco un puesto desafiante en una empresa líder donde pueda aplicar mis habilidades y contribuir al desarrollo de productos de vanguardia.</p>
+    
+</section>
+<section id="portfolio">
+    <h2>Portafolio</h2>
+    <div class="gallery">
+    <div class="project">
+    <img src="../portafolio/gal1.jpg" alt="proyecto 2">
+    <p>Capacitaciones Robotica educativa</p>
+    </div>
+    <div class="project">
+        <img src="../portafolio/gal2.jpg" alt="proyecto 2">
+        <p>
+            Diseño de circuitos</p>
+    </div>
+    <div class="project">
+        <img src="../portafolio/gal3.jpg" alt="proyecto 2">
+        <p>Robotica</p>
+    </div>
+
+</section>
+
+<section id="contact">
+<h2 style="color: white;"> Contacto</h2>
+
+<form action="/submit" method="post">
+    <label for="name"></style>Nombre</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Correo electronico</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="message">Mensaje</label>
+    <textarea id="message" name="message" required></textarea><br>
+    <input type="submit" value="Enviar">
+    </form>
+</section>
+
+ 
+</body>
+</html>
