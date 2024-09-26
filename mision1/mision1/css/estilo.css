@@ -1,76 +1,111 @@
 body {
-    font-family: 'Arial';
-    margin: 0;
-    padding: 10px;
+  font-family: "Bree Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  padding: 0px;
 
-  }
-  .logo{
-    width: 30px;
-    height: 30px;
-    padding: 30px;
-    border: 1px solid goldenrod;
-    background-image: url("../mexfood2.jpg");
-    background-size: cover;
-  }
-  
-  header {
-    background-color: goldenrod;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .nav {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px 
-    
-  }
-  
-  .nav-item {
-    color: white;
-    font-family: bold;
-  }
-  
-  .hero {
-    background-image: url('../mex.jpg');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    width: auto;
-    height: auto;
-  }
-  
-  h2, h3 {
-    color: red;
-  }
-  .titulo-rojo {
-    color: red; /* Texto en rojo */
-    text-shadow: 
-      -1px -1px 0 black,  
-      1px -1px 0 black,   
-      -1px 1px 0 black,   
-      1px 1px 0 black;   /* Contorno negro */
-    font-size: 3em;      /* Ajusta el tamaño del texto */
-  }
-  
-  p {
-    color: black;
-  }
-  
-  .button {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
+}
+p{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font: weight;
+  font-style: normal;
+}
+/* .roboto-slab- <uniquifier> {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.bree-serif-regular {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}*/
 
+
+.logo img{
+  max-width: 200px;
+  height: auto;
+      
+}
+
+header {
+  background-color: #484848;
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url('../mexfond.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+h2, h3 {
+  color: #e55b0e;
+}
+.titulo-rojo {
+  color: #ff4907; /* Texto en rojo */
+  text-shadow: 
+    -1px -1px 0 #ffffff,  
+    1px -1px 0 white,   
+    -1px 1px 0 white,   
+    1px 1px 0 white;   /* Contorno negro */
+  font-size: 3em;      /* Ajusta el tamaño del texto */
+}
+
+p {
+  color: black;
+}
+
+.button {
+  background-color: #e55b0e;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+footer {
+  background-color: #ead18e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+}
 @media (max-width: 600px){
-    .header{
-        flex-direction: column;
-     }
- }
- 
+  .header{
+      flex-direction: column;
+  }
+}
+
