@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurante</title>
+    <link href="css/estilo.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <img src="logo1.png"  alt="Logo Mex-Food">
+      </div>
+      <input type="checkbox" id="menu-toggle">
+    
+      <label for="menu-toggle" class="menu-icon"> ☰</label>
+     
+      <nav>
+        <ul class="menu">
+          <li><a href="#quienes-somos">Quiénes Somos</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <main>
+      
+        <div class="wrapper">
+          
+        <!-- Accesos directos -->
+        <section class="accesos-directos">
+          <span></span>
+            <div class="content"><h2>Otras <br>opciones</h2></div>
+            <div class="content">
+          <ul style="list-style-type:none;">
+            <li><a href="postres.html">Postres</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="salsas.html">Salsas</a></li>
+          </ul>
+        </div>
+        </section>
+        
+        <!-- Slider a la derecha -->
+        <div class="slider" id="slider">
+                        <ul class="slides">
+                          <li class="slide" id="slide1">
+                                  <a href="#">
+                                  <p class="caption">Tacos al pastor</p>
+                                  <img src="tacos.jpg" alt="photo 1">
+                               </a>
+                          </li>
+                          <li class="slide" id="slide2">
+                              <a href="#">
+                                   <p class="caption">Enchiladas verdes</p>
+                                  <img src="enchiladas.jpg" alt="photo 2">
+                              </a>
+                          </li>
+                          <li class="slide" id="slide3">
+                                <a href="#">
+                                  <p class="caption">guacamole</p>
+                                  <img src="guacamole.jpg" alt="photo 3">
+                              </a>
+                          </li>
+  
+                      </ul>
+                      <ul class="slider-controler">
+                          <li><a href="#slide1">&bullet;</a></li>
+                          <li><a href="#slide2">&bullet;</a></li>
+                          <li><a href="#slide3">&bullet;</a></li>
+                        </ul>
+         </div>
+              
+        </section>
+    </div>
+    </main>
+  
+    
+
+      <section id="quienes-somos">
+        <h2>Quiénes Somos</h2>
+        <p>
+          En <strong>MexFood</strong>, nuestra misión es compartir el verdadero sabor de México con el mundo. Nacimos del amor por la cocina tradicional mexicana, fusionando las recetas clásicas con un toque moderno para crear una experiencia culinaria única.
+        </p>
+        <p>
+          Desde nuestras tortillas hechas a mano hasta nuestras salsas preparadas diariamente, cada detalle de nuestra cocina refleja el respeto y la pasión que tenemos por nuestras raíces. Nos esforzamos por ofrecer una experiencia que va más allá de lo gastronómico, transportando a nuestros comensales al vibrante ambiente mexicano con cada visita.
+        </p>
+        <p>
+          Creemos en el poder de la comida para reunir a las personas y crear recuerdos. Ya sea en una celebración especial, una comida familiar o una cena casual entre amigos, <strong>MexFood</strong> es el lugar donde los sabores de México se encuentran con la calidez de nuestra atención.
+        </p>
+      </section>
+
+      
+      <section id="menu">
+        <h2>Descubre Nuestro Menú</h2>
+        <p>Platos preparados con ingredientes frescos y auténticos que te harán sentir como si estuvieras en México.</p>
+        
+            <h3>Tacos al Pastor</h3>
+            <img src="tacos.jpg" alt="tacos" width="300">
+            <p>Tortillas frescas con cerdo marinado, piña, y nuestra salsa especial.</p>
+         
+            <h3>Enchiladas Verdes</h3>
+            <img src="enchiladas.jpg" alt="tacos" width="300">
+            <p>Tortillas rellenas bañadas en salsa verde, acompañadas de frijoles y arroz.</p>
+          
+            <h3>Guacamole</h3>
+            <img src="guacamole.jpg" alt="tacos" width="300">
+            <p>Fresco y preparado al momento con aguacates, cilantro, cebolla y un toque de limón.</p>
+          
+      </section>
+
+      <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        
+          <h3>Comida para Llevar</h3>
+          <img src="varied.jpg" alt="tacos" width="300">
+          <p>Disfruta de nuestro menú en la comodidad de tu hogar.</p>
+        
+          <h3>Catering para Eventos</h3>
+          <img src="cat.jpg" alt="tacos" width="300">
+          <p>Hacemos que tus eventos sean especiales con nuestra deliciosa comida mexicana.</p>
+        
+          <h3>Opciones Vegetarianas y Veganas</h3>
+          <img src="veg.jpg" alt="tacos" width="300">
+          <p>Un menú pensado para todos los gustos y necesidades.</p>
+        
+      </section>
+
+      <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna pregunta? ¿Quieres hacer una reserva? ¡Escríbenos!</p>
+        <form action="http://35.193.82.16/submit.php" method="post" >
+        
+        <div class="form-container">
+          <form class="form">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+            <button class="form-submit-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+      
+      <footer>
+        <p>&copy; 2024 MexFood. Todos los derechos reservados.</p>
+        <ul class="social-media">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </footer>
+      
+
+</body>
+</html>
