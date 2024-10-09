@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const courses = JSON.parse(localStorage.getItem("courses")) || [];
 
@@ -25,15 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const usuario = document.getElementById("ingresar").value;
         const password = document.getElementById("ingresa-password").value;
         
-        // Obtiene la lista de usuarios desde el localStorage
+        // Obtiene la lista de usuarios del localStorage
         const users = JSON.parse(localStorage.getItem("users")) || [];
         
-        // Verifica si las credenciales coinciden con algún usuario registrado
+        // Verifica si coinciden algún usuario registrado
         const user = users.find(u => u.usuario === usuario && u.password === password);
         
         if (user) {
             // Si es admin, redirige a la página de administración
-            if (usuario === "admin" && password === "admin") {
+            if (usuario === "admin") {
                 window.location.href = "admin.html";
             } else {
                 window.location.href = "users.html";
