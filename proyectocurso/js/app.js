@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     const courses = JSON.parse(localStorage.getItem("courses")) || [];
 
@@ -26,10 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const usuario = document.getElementById("ingresar").value;
         const password = document.getElementById("ingresa-password").value;
         
-        // Obtiene la lista de usuarios del localStorage
+        // Obtiene la lista de usuarios desde el localStorage
         const users = JSON.parse(localStorage.getItem("users")) || [];
         
-        // Verifica si coinciden algún usuario registrado
+        // Verifica si las credenciales coinciden con algún usuario registrado
         const user = users.find(u => u.usuario === usuario && u.password === password);
         
         if (user) {
@@ -42,6 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             alert("Datos incorrectos");
         }
+    });
+     // Cerrar sesión
+     document.getElementById("logout")?.addEventListener("click", () => {
+        window.location.href = "index.html";
     });
 
     // Agregar curso (Admin)
@@ -69,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
             listacurso.innerHTML = "";
             courses.forEach((course) => {
                 const courseElement = document.createElement("div");
+                courseElement.classList.add("curso"); // Añade la clase curso
                 courseElement.innerHTML = `<h3>${course.title}</h3><p>${course.description}</p><p>Duración: ${course.duration} horas</p>`;
                 listacurso.appendChild(courseElement);
             });
@@ -83,6 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
             cursosv.innerHTML = "";
             courses.forEach((course) => {
                 const courseElement = document.createElement("div");
+                courseElement.classList.add("curso"); // Añade la clase curso
                 courseElement.innerHTML = `<h3>${course.title}</h3><p>${course.description}</p><p>Duración: ${course.duration} horas</p>`;
                 cursosv.appendChild(courseElement);
             });
